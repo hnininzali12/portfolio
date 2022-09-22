@@ -815,17 +815,17 @@ ul li a i {
         opacity: 1;
     }
     .section {
-        margin-left: 20px;
+        margin-left: 10px;
         display: block;
     }
-    .home-img .box {
+    /* .home-img .box {
         width: 250px;
         height: 250px;
         border-radius: 200px;
     }
     .home-img .box::before {
         inset: -5px 100px;
-    }
+    } */
     .about .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
