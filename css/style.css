@@ -213,7 +213,7 @@ ul li a i {
 }
 
 .menu-icon.active {
-    left: 75%;
+    left: 35%;
     transition: all .5s ease-in-out;
 }
 
@@ -815,7 +815,7 @@ ul li a i {
         opacity: 1;
     }
     .section {
-        margin-left: 30px;
+        margin-left: 20px;
         display: block;
     }
     .home-img .box {
@@ -861,6 +861,15 @@ ul li a i {
         margin: 8px 15px;
         padding: 15px;
     }
+    .menu-icon.active {
+        left: 40%;
+    }
+}
+
+@media (max-width:670px) {
+    .menu-icon.active {
+        left: 50%
+    }
 }
 
 @media (max-width:545px) {
@@ -872,11 +881,34 @@ ul li a i {
         padding: 5px 15px;
         font-size: 18px;
     }
+    .menu-icon.active {
+        left: 65%;
+    }
     .home .home-info .profession {
         font-size: 20px;
     }
     .home .home-info .profession span::before {
         animation: typing 5s steps(19) alternate infinite;
+    }
+    .box .content img {
+        opacity: 1;
+    }
+    .home-img .box.touch {
+        box-shadow: 0 0 20px var(--skin-color);
+    }
+    .box.touch .content img {
+        opacity: 0;
+    }
+    .home-img .box.touch:before {
+        inset: -20px 0px;
+    }
+    .home-img .box::after {
+        content: '';
+        position: absolute;
+        background-color: var(--bg-black-900);
+        inset: 3px;
+        border-radius: 50%;
+        z-index: 1;
     }
 }
 
@@ -894,10 +926,16 @@ ul li a i {
     .home .home-info .hello .name {
         font-size: 20px;
     }
+    .menu-icon.active {
+        left: 75%;
+    }
 }
 
 @media (max-width:376px) {
     .home .home-info .profession {
         font-size: 18px;
+    }
+    .menu-icon.active {
+        left: 80%;
     }
 }
