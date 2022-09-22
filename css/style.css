@@ -818,14 +818,6 @@ ul li a i {
         margin-left: 10px;
         display: block;
     }
-    /* .home-img .box {
-        width: 250px;
-        height: 250px;
-        border-radius: 200px;
-    }
-    .home-img .box::before {
-        inset: -5px 100px;
-    } */
     .about .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
