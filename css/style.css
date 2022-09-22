@@ -845,7 +845,7 @@ ul li a i {
         max-width: 100%;
         margin-bottom: 20px;
     }
-    .home .home-img .img-box {
+    .home .home-img .box {
         display: flex;
         justify-content: center;
         margin: 50px 0px;
@@ -882,6 +882,26 @@ ul li a i {
     }
     .home .home-info .profession span::before {
         animation: typing 5s steps(19) alternate infinite;
+    }
+    .box .content img {
+        opacity: 1;
+    }
+    .home-img .box.touch {
+        box-shadow: 0 0 20px var(--skin-color);
+    }
+    .box.touch .content img {
+        opacity: 0;
+    }
+    .home-img .box.touch:before {
+        inset: -20px 0px;
+    }
+    .home-img .box::after {
+        content: '';
+        position: absolute;
+        background-color: var(--bg-black-900);
+        inset: 2px;
+        border-radius: 80%;
+        z-index: 1;
     }
 }
 
