@@ -848,6 +848,7 @@ ul li a i {
     .home .home-img .img-box {
         display: flex;
         justify-content: center;
+        margin: 50px 0px;
     }
     .contact .form .form-control {
         margin: 8px 15px;
