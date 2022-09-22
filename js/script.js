@@ -33,7 +33,7 @@ window.addEventListener('scroll', () => {
     }
 })
 
-const imageBox = document.querySelector('.box');
-imageBox.addEventListener('touchstart', () => {
-    imageBox.classList.toggle('touch');
-})
+// const imageBox = document.querySelector('.box');
+// imageBox.addEventListener('touchstart', () => {
+//     imageBox.classList.toggle('touch');
+// })
