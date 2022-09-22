@@ -884,17 +884,30 @@ ul li a i {
     .home .home-info .profession span::before {
         animation: typing 5s steps(19) alternate infinite;
     }
-    .box.touch .content img {
-        opacity: 1;
+    .home-img .content img {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 2;
+        border-radius: 50%;
+        object-fit: cover;
+        pointer-events: all;
+        transition: all .5s ease;
     }
-    .box.touch .box::before {
+    .box.touch.content img {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .box.touch::before {
         inset: -10px 0px;
     }
     .home-img .box::before {
         content: '';
         position: absolute;
         background: linear-gradient(315deg, var(--skin-color), #dc6c58);
-        inset: -10px 120px;
+        inset: -3px 120px;
         transition: all .5s ease;
         animation: animate 4s linear infinite;
     }
