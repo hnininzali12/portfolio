@@ -202,7 +202,7 @@ ul li a i {
     border-radius: 3px;
     position: fixed;
     z-index: 6;
-    top: 20px;
+    top: 30px;
     left: 5%;
     cursor: pointer;
     display: flex;
@@ -355,7 +355,7 @@ ul li a i {
     background-color: var(--bg-black-900);
     width: 300px;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 100%;
     position: relative;
     overflow: hidden;
     transition: all .6s ease-in-out;
@@ -629,10 +629,12 @@ ul li a i {
 .service .service-item {
     flex: 0 0 50%;
     max-width: 50%;
+    margin-bottom: 30px;
 }
 
 .service-item .service-item-inner {
     padding: 20px 25px;
+    height: 100%;
     background: var(--card-color);
     border-radius: 10px;
     color: var(--text-black-color);
@@ -715,6 +717,11 @@ ul li a i {
     height: 60%;
 }
 
+.portfolio .portfolio-item-inner p {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* contact section  */
 
@@ -772,7 +779,7 @@ ul li a i {
 
 .contact .form .form-control {
     width: 100%;
-    margin: 10px 15px;
+    margin: 10px 0px;
     padding: 18px;
     background-color: var(--card-color);
     color: var(--text-black-color);
@@ -810,6 +817,10 @@ ul li a i {
     }
     .aside.active {
         left: 0;
+        display: flex;
+        height: 80vh;
+        align-items: center;
+        justify-content: center;
         transition: all .5s ease-in-out;
     }
     .menu-icon {
@@ -844,12 +855,11 @@ ul li a i {
     .service .service-item {
         flex: 0 0 100%;
         max-width: 100%;
-        margin-bottom: 20px;
     }
     .home .home-img .box {
         display: flex;
         justify-content: center;
-        margin: 50px 0px;
+        margin: 80px 0px;
     }
     .contact .form .form-control {
         margin: 8px 15px;
@@ -883,18 +893,6 @@ ul li a i {
     }
     .home .home-info .profession span::before {
         animation: typing 5s steps(19) alternate infinite;
-    }
-    .home-img .content img {
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        z-index: 2;
-        border-radius: 50%;
-        object-fit: cover;
-        pointer-events: all;
-        transition: all .5s ease;
     }
     .box.touch.content img {
         opacity: 0;
