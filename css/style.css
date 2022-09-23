@@ -266,6 +266,11 @@ ul li a i {
     max-width: 60%;
 }
 
+.home .home-image {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
 .home .home-info .hello {
     font-family: 'Gentium Plus', serif;
     font-size: 30px;
@@ -372,19 +377,20 @@ ul li a i {
     background: linear-gradient(315deg, var(--skin-color), #dc6c58);
     inset: -10px 120px;
     transition: all .5s ease;
-    animation: animate 4s linear infinite;
+    -webkit-animation: animate 4s linear infinite;
+    ;
 }
 
 .home-img .box:hover:before {
     inset: -5px 0px;
 }
 
-@keyframes animate {
+@-webkit-keyframes animate {
     0% {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
     }
 }
 
@@ -862,7 +868,7 @@ ul li a i {
         margin: 80px 0px;
     }
     .contact .form .form-control {
-        margin: 8px 15px;
+        margin: 8px 10px;
         padding: 15px;
     }
     .menu-icon.active {
@@ -894,11 +900,11 @@ ul li a i {
     .home .home-info .profession span::before {
         animation: typing 5s steps(19) alternate infinite;
     }
-    .box.touch.content img {
+    .box.touch .content img {
         opacity: 0;
         pointer-events: none;
     }
-    .box.touch::before {
+    .home-img .box.touch::before {
         inset: -10px 0px;
     }
     .home-img .box::before {
