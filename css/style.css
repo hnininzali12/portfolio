@@ -378,9 +378,6 @@ ul li a i {
     inset: -10px 120px;
     transition: all .5s ease;
     -webkit-animation: animate 4s linear infinite;
-    -moz-animation: animate 4s linear infinite;
-    -o-animation: animate 4s linear infinite;
-    -ms-animation: animate 4s linear infinite;
     animation: animate 4s linear infinite;
 }
 
@@ -397,39 +394,12 @@ ul li a i {
     }
 }
 
-@-moz-keyframes animate {
-    0% {
-        -moz-transform: rotate(0deg);
-    }
-    100% {
-        -moz-transform: rotate(360deg);
-    }
-}
-
-@-o-keyframes animate {
-    0% {
-        -o-transform: rotate(0deg);
-    }
-    100% {
-        -o-transform: rotate(360deg);
-    }
-}
-
-@-ms-keyframes animate {
-    0% {
-        -ms-transform: rotate(0deg);
-    }
-    100% {
-        -ms-transform: rotate(360deg);
-    }
-}
-
 @keyframes animate {
     0% {
-        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -939,7 +909,7 @@ ul li a i {
     .home .home-info .profession span::before {
         animation: typing 5s steps(19) alternate infinite;
     }
-    .box.touch .content img {
+    /* .box.touch .content img {
         opacity: 0;
         pointer-events: none;
     }
@@ -953,11 +923,8 @@ ul li a i {
         inset: -3px 120px;
         transition: all .5s ease;
         -webkit-animation: animate 4s linear infinite;
-        -moz-animation: animate 4s linear infinite;
-        -o-animation: animate 4s linear infinite;
-        -ms-animation: animate 4s linear infinite;
         animation: animate 4s linear infinite;
-    }
+    } */
 }
 
 @media (max-width:421px) {
