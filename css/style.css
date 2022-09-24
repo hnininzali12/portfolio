@@ -357,7 +357,7 @@ ul li a i {
 }
 
 .home-img .box {
-    background-color: var(--bg-black-100);
+    background-color: var(--bg-black-900);
     width: 300px;
     height: 300px;
     border-radius: 100%;
@@ -367,7 +367,27 @@ ul li a i {
     cursor: pointer;
 }
 
+@media (hover:hover) {
+    .home-img .box:hover {
+        box-shadow: 0 0 10px var(--skin-color);
+    }
+    .home-img .box:hover:before {
+        inset: -5px 0px;
+    }
+    .content a:hover {
+        box-shadow: 0 0 10px var(--skin-color);
+    }
+}
+
 .home-img .box:hover {
+    box-shadow: 0 0 10px var(--skin-color);
+}
+
+.home-img .box:hover:before {
+    inset: -5px 0px;
+}
+
+.content a:hover {
     box-shadow: 0 0 10px var(--skin-color);
 }
 
@@ -377,21 +397,7 @@ ul li a i {
     background: linear-gradient(315deg, var(--skin-color), #dc6c58);
     inset: -10px 120px;
     transition: all .5s ease;
-    -webkit-animation: animate 4s linear infinite;
     animation: animate 4s linear infinite;
-}
-
-.home-img .box:hover:before {
-    inset: -5px 0px;
-}
-
-@-webkit-keyframes animate {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
 }
 
 @keyframes animate {
@@ -465,10 +471,6 @@ ul li a i {
     border-radius: 50px;
     margin-top: 10px;
     transition: all .5s ease;
-}
-
-.content a:hover {
-    box-shadow: 0 0 10px var(--skin-color);
 }
 
 
@@ -874,6 +876,7 @@ ul li a i {
     .home .home-img .box {
         display: flex;
         justify-content: center;
+        max-width: 100%;
         margin: 80px 0px;
     }
     .contact .form .form-control {
@@ -915,7 +918,7 @@ ul li a i {
     }
     .home-img .box.touch::before {
         inset: -10px 0px;
-    }
+    } */
     .home-img .box::before {
         content: '';
         position: absolute;
@@ -924,7 +927,23 @@ ul li a i {
         transition: all .5s ease;
         -webkit-animation: animate 4s linear infinite;
         animation: animate 4s linear infinite;
-    } */
+    }
+    @-webkit-keyframes animate {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 }
 
 @media (max-width:421px) {
