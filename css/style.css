@@ -913,7 +913,7 @@ ul li a i {
         background: linear-gradient(315deg, var(--skin-color), #dc6c58);
         inset: -3px 120px;
         transition: all .5s ease;
-        animation: animate 4s linear infinite;
+        -webkit-animation: animate 4s linear infinite;
     }
 }
 
