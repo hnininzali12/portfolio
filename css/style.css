@@ -378,7 +378,10 @@ ul li a i {
     inset: -10px 120px;
     transition: all .5s ease;
     -webkit-animation: animate 4s linear infinite;
-    ;
+    -moz-animation: animate 4s linear infinite;
+    -o-animation: animate 4s linear infinite;
+    -ms-animation: animate 4s linear infinite;
+    animation: animate 4s linear infinite;
 }
 
 .home-img .box:hover:before {
@@ -386,6 +389,42 @@ ul li a i {
 }
 
 @-webkit-keyframes animate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes animate {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes animate {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes animate {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@keyframes animate {
     0% {
         -webkit-transform: rotate(0deg);
     }
@@ -914,6 +953,10 @@ ul li a i {
         inset: -3px 120px;
         transition: all .5s ease;
         -webkit-animation: animate 4s linear infinite;
+        -moz-animation: animate 4s linear infinite;
+        -o-animation: animate 4s linear infinite;
+        -ms-animation: animate 4s linear infinite;
+        animation: animate 4s linear infinite;
     }
 }
 
