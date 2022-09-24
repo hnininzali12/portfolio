@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
 })
 
 const imageBox = document.querySelector('.box');
-imageBox.addEventListener('click', () => {
+imageBox.addEventListener('touchstart', () => {
     imageBox.classList.toggle('touch');
 })
 
