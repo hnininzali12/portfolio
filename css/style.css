@@ -367,6 +367,8 @@ ul li a i {
     cursor: pointer;
 }
 
+
+/* 
 @media ( any-hover: hover) {
     .home-img .box:hover {
         box-shadow: 0 0 10px var(--skin-color);
@@ -381,7 +383,7 @@ ul li a i {
         opacity: 0;
         pointer-events: none;
     }
-}
+} */
 
 .home-img .box:hover {
     box-shadow: 0 0 10px var(--skin-color);
@@ -924,7 +926,7 @@ ul li a i {
     .home-img {
         margin: 80px 0px;
     }
-    .home-img .box::before {
+    /* .home-img .box::before {
         content: '';
         position: absolute;
         background: linear-gradient(315deg, var(--skin-color), #dc6c58);
@@ -949,7 +951,7 @@ ul li a i {
         100% {
             transform: rotate(360deg);
         }
-    }
+    } */
 }
 
 @media (max-width:421px) {
