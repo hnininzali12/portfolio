@@ -367,9 +367,7 @@ ul li a i {
     cursor: pointer;
 }
 
-
-/* 
-@media ( any-hover: hover) {
+@media ( hover: hover) {
     .home-img .box:hover {
         box-shadow: 0 0 10px var(--skin-color);
     }
@@ -383,7 +381,7 @@ ul li a i {
         opacity: 0;
         pointer-events: none;
     }
-} */
+}
 
 .home-img .box:hover {
     box-shadow: 0 0 10px var(--skin-color);
@@ -405,6 +403,16 @@ ul li a i {
     inset: -1px 30px;
     transition: all .5s ease;
     animation: animate 4s linear infinite;
+    --webkit-animation: animate 4s linear infinite;
+}
+
+@-webkit-keyframes animate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes animate {
