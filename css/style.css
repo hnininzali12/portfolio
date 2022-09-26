@@ -362,7 +362,7 @@ ul li a i {
     height: 300px;
     border-radius: 100%;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden !important; */
     transition: all .6s ease-in-out;
     cursor: pointer;
 }
@@ -395,7 +395,8 @@ ul li a i {
     content: '';
     position: absolute;
     background: linear-gradient(315deg, var(--skin-color), #dc6c58);
-    inset: -10px 120px;
+    border-radius: 100%;
+    inset: -1px 30px;
     transition: all .5s ease;
     animation: animate 4s linear infinite;
 }
@@ -923,7 +924,8 @@ ul li a i {
         content: '';
         position: absolute;
         background: linear-gradient(315deg, var(--skin-color), #dc6c58);
-        inset: -3px 120px;
+        border-radius: 100%;
+        inset: -2px 40px;
         transition: all .5s ease;
         -webkit-animation: animate 4s linear infinite;
         animation: animate 4s linear infinite;
