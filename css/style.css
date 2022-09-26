@@ -880,7 +880,7 @@ ul li a i {
         margin: 80px 0px;
     }
     .contact .form .form-control {
-        margin: 8px 10px;
+        margin: 8px 5px;
         padding: 15px;
     }
     .menu-icon.active {
@@ -912,13 +912,6 @@ ul li a i {
     .home .home-info .profession span::before {
         animation: typing 5s steps(19) alternate infinite;
     }
-    /* .box.touch .content img {
-        opacity: 0;
-        pointer-events: none;
-    }
-    .home-img .box.touch::before {
-        inset: -10px 0px;
-    } */
     .home-img .box::before {
         content: '';
         position: absolute;
@@ -972,5 +965,20 @@ ul li a i {
     }
     .menu-icon.active {
         left: 80%;
+    }
+    .home-img .box::before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(315deg, var(--skin-color), #dc6c58);
+        border-radius: 100%;
+        inset: 0px 40px;
+        transition: all .5s ease;
+        animation: animate 4s linear infinite;
+    }
+    .home-img .box:hover {
+        box-shadow: 0 0 10px var(--skin-color);
+    }
+    .home-img .box:hover::before {
+        opacity: 0;
     }
 }

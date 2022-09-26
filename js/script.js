@@ -32,14 +32,3 @@ window.addEventListener('scroll', () => {
         asideMenu.classList.remove('active');
     }
 })
-
-const imageBox = document.querySelector('.box');
-imageBox.addEventListener('touchstart', () => {
-    imageBox.classList.toggle('touch');
-})
-
-window.addEventListener('scroll', () => {
-    if (imageBox.classList.contains('touch')) {
-        imageBox.classList.remove('touch');
-    }
-})
