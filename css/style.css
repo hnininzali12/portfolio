@@ -203,7 +203,7 @@ ul li a i {
     position: fixed;
     z-index: 6;
     top: 30px;
-    left: 5%;
+    left: 1%;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -863,7 +863,7 @@ ul li a i {
     }
 }
 
-@media (max-width:765px) {
+@media (max-width:796px) {
     .home .home-info,
     .home .home-img,
     .portfolio .portfolio-item,
@@ -876,8 +876,9 @@ ul li a i {
     .home .home-img .box {
         display: flex;
         justify-content: center;
+        align-items: center;
         max-width: 100%;
-        margin: 80px 0px;
+        margin: auto
     }
     .contact .form .form-control {
         margin: 8px 5px;
@@ -912,31 +913,12 @@ ul li a i {
     .home .home-info .profession span::before {
         animation: typing 5s steps(19) alternate infinite;
     }
-    .home-img .box::before {
-        content: '';
-        position: absolute;
-        background: linear-gradient(315deg, var(--skin-color), #dc6c58);
-        border-radius: 100%;
-        inset: -2px 40px;
-        transition: all .5s ease;
-        -webkit-animation: animate 4s linear infinite;
-        animation: animate 4s linear infinite;
+    .home-img .box {
+        width: 270px;
+        height: 270px;
     }
-    @-webkit-keyframes animate {
-        0% {
-            -webkit-transform: rotate(0deg);
-        }
-        100% {
-            -webkit-transform: rotate(360deg);
-        }
-    }
-    @keyframes animate {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+    .home-img {
+        margin: 80px 0px;
     }
 }
 
@@ -965,20 +947,5 @@ ul li a i {
     }
     .menu-icon.active {
         left: 80%;
-    }
-    .home-img .box::before {
-        content: '';
-        position: absolute;
-        background: linear-gradient(315deg, var(--skin-color), #dc6c58);
-        border-radius: 100%;
-        inset: 0px 40px;
-        transition: all .5s ease;
-        animation: animate 4s linear infinite;
-    }
-    .home-img .box:hover {
-        box-shadow: 0 0 10px var(--skin-color);
-    }
-    .home-img .box:hover::before {
-        opacity: 0;
     }
 }
