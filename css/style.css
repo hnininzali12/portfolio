@@ -914,11 +914,37 @@ ul li a i {
         animation: typing 5s steps(19) alternate infinite;
     }
     .home-img .box {
-        width: 270px;
-        height: 270px;
+        width: 280px;
+        height: 280px;
     }
     .home-img {
         margin: 80px 0px;
+    }
+    .home-img .box::before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(315deg, var(--skin-color), #dc6c58);
+        border-radius: 100%;
+        inset: -2px 40px;
+        transition: all .5s ease;
+        -webkit-animation: animate 4s linear infinite;
+        animation: animate 4s linear infinite;
+    }
+    @-webkit-keyframes animate {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
 }
 
