@@ -35,6 +35,10 @@ window.addEventListener('scroll', () => {
 
 let box = document.querySelector('.box');
 box.addEventListener('touchstart', () => {
-    box.classList.toggle('touch');
-    document.querySelector('.box-img').classList.toggle('touch')
+    box.classList.add('touch');
+    document.querySelector('.box-img').classList.add('touch')
+})
+box.addEventListener('touchend', () => {
+    box.classList.remove('touch');
+    document.querySelector('.box-img').classList.remove('touch')
 })
